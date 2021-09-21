@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .marketing {
+            margin: 150px auto 70px auto;
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: 400;
+        }
+
+        /* rtl:begin:ignore */
+        .marketing .col-lg-4 p {
+            margin-right: 0.75rem;
+            margin-left: 0.75rem;
+        }
+
+        .search {
+            border-color: #EBC521;
+            color: #EBC521;
+        }
+
+        .search:hover {
+            background-color: #EBC521;
+            color: #fff;
+            border-color: #EBC521;
+        }
+
+        .reading {
+            background-color: #EBC521;
+            border-style: none;
+            padding: 3px;
+            width: 50%;
+        }
+
+        .me {
+            text-align: center;
+        }
+
+        .copyright {
+            font-size: 80%;
+        }
+
+        @media only screen and (max-width: 850px) {
+            .me {
+                text-align: left;
+            }
+
+            .reading {
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            .copyright {
+                font-size: 80%;
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light w-100" style="background-color: #f8fbff;">
+        <div class="container-fluid">
+            <a class="my-1 mx-4" href="/"><img src="./Component 1 – 1.png" style="width: 10em" alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px; color: #00b4d8;" aria-current="page"
+                            href="./index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                            style="transition-delay: 2s, 4ms; transition-delay: revert;font-size: 20px; text-decoration-line: underline; text-underline-offset: 4px; text-decoration-color: #000;"
+                            href="./blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px; color: #00b4d8;" href="./poems.html">poems</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: 20px; color: #00b4d8;" href="./contact.html">contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="search btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-4 p-md-5 mb-4 text-white" style="background-color: #000;">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">
+                Title of a longer featured blog post
+            </h1>
+            <p class="lead my-3">
+                Multiple lines of text that form the lede, informing new readers
+                quickly and efficiently about what’s most interesting in this post’s
+                contents.
+            </p>
+            <p class="lead mb-0">
+                <a href="#" class="fw-normal" style="color: #EBC521;">Continue reading...</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="row mb-2 mx-3" style="margin: 50px 20px">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2 mx-3" style="margin: 50px 20px">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2 mx-3" style="margin: 50px 20px">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                style="margin: 20px;padding: 10px; border-radius: 10px; box-shadow: 0px 0px 15px #7C7B7B; background-color: #00b4d8;">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">
+                        This is a wider card with supporting text below as a natural
+                        lead-in to additional content.
+                    </p>
+                    <button class="reading"><a href="#"
+                            style="font-size: 1em; font-weight: 300; text-decoration: none; color: #000;"
+                            class="stretched-link">Continue reading >></a>
+                    </button>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="./images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="container-fluid my-0"
+        style="background-color:#000; color: #fff; text-align: center; padding: 2.5em;">
+        <div class="me">
+            <a class="my-1" style="margin: 0;" href="/"><img src="./Component 1 – 1.png" style="width: 10em;"
+                    alt="logo"></a>
+            <h6 class="copyright">Copyright © 2021 Underdone Daires, Inc</h6>
+        </div>
+        <div class="top" style="text-align: right; margin-top: -40px;">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="130" height="30" fill="currentColor"
+                    class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
+                    <path style="color: #EBC521;"
+                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
